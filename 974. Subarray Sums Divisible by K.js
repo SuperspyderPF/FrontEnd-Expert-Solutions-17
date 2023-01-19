@@ -1,0 +1,1 @@
+subarraysDivByK=(x,k)=>{c=0,v=0;q=new Array(k).fill(0);q[0]=1;for(n of x){v=(v+n)%k;if(v<0)v+=k;c+=q[v];q[v]++;};return c}
